@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainActivity.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,18 +14,22 @@ namespace MainActivity
 {
     public partial class Add_Computer : Form
     {
-        SqlConnection connection;
-        SqlCommand command = new SqlCommand();
-        SqlDataAdapter adapter;
+        //SqlConnection connection;
+        //SqlCommand command = new SqlCommand();
+        //SqlDataAdapter adapter;
+        //DataTable table;
+        //string str = "Data Source=ADMIN;Initial Catalog=INTERNET;Integrated Security=True";
+
+        //DataProcess coon;
         DataTable table;
-        string str = "Data Source=ADMIN;Initial Catalog=INTERNET;Integrated Security=True";
 
         private void loaddata(string sqltable)
         {
-            table = new DataTable();
-            adapter = new SqlDataAdapter("select * from " + sqltable, str);
-            table.Clear();
-            adapter.Fill(table);
+            //table = new DataTable();
+            //adapter = new SqlDataAdapter("select * from " + sqltable, str);
+            //table.Clear();
+            //adapter.Fill(table);
+            table = DataProcess.Instance.selectTable("select * from " +sqltable);
             
         }
 
@@ -36,8 +41,7 @@ namespace MainActivity
 
         private void Add_Computer_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(str);
-            connection.Open();
+            DataProcess.Instance.Connection();
 
             loaddata("tRoom");
             foreach (DataRow dr in table.Rows)
@@ -122,7 +126,7 @@ namespace MainActivity
             loaddata("tComputer");
             foreach(DataRow row in table.Rows)
             {
-                if (row[0].ToString().Equals(txtId)) return false;
+                if (row[0].ToString().Equals(txtId.Text)) return false;
             }
             return true;
         }
@@ -185,13 +189,9 @@ namespace MainActivity
             {
                 if (checkid())
                 {
-                    command = connection.CreateCommand();
-                    command.CommandText = "insert into tComputer(idComputer, computerName, idRoom, idHardDrive, idCapacity, idChip, idRam, idSpeed, idScreen, idSizeScreen, idMouse, idKeybroad, idRom, idSpeaker, GhiChu) " +
-                        "values ('" + txtId.Text + "','" + txtName.Text + "','" + cbbIDRoom.Text + "','" + cbbIDHardDisk + "','" + cbbIDCapacity.Text + "','" + cbbIDChip.Text +
-                        "','" + cbbIDRam.Text + "','" + cbbIDSpeed.Text + "','" + cbbIDScreen.Text + "','" + cbbIDSizeScreen.Text + "','" + cbbIDMouse.Text + "','" + cbbIDKeybroad.Text +
-                        "','" + cbbIDRom.Text + "','" + cbbIDSpeaker.Text + "','" + txtNote.Text + "')";
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Thành công", "Thông báo");
+                    Insert_Accessories insert = new Insert_Accessories();
+                    insert.Insert_Computer(txtId.Text, txtName.Text, cbbIDRoom.Text, cbbIDHardDisk.Text, cbbIDCapacity.Text, cbbIDChip.Text, cbbIDRam.Text, cbbIDSpeed.Text, cbbIDScreen.Text, cbbIDSizeScreen.Text, cbbIDMouse.Text, cbbIDKeybroad.Text, cbbIDRom.Text, cbbIDSpeaker.Text, 0, txtNote.Text);
+                    MessageBox.Show("Insert Success!!");
                 }
                 else
                 {

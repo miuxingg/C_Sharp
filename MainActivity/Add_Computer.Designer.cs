@@ -101,6 +101,7 @@
             // 
             // cbbIDRoom
             // 
+            this.cbbIDRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDRoom.FormattingEnabled = true;
             this.cbbIDRoom.Location = new System.Drawing.Point(161, 124);
@@ -131,6 +132,7 @@
             // 
             // cbbIDHardDisk
             // 
+            this.cbbIDHardDisk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDHardDisk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDHardDisk.FormattingEnabled = true;
             this.cbbIDHardDisk.Location = new System.Drawing.Point(161, 171);
@@ -150,6 +152,7 @@
             // 
             // cbbIDChip
             // 
+            this.cbbIDChip.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDChip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDChip.FormattingEnabled = true;
             this.cbbIDChip.Location = new System.Drawing.Point(161, 266);
@@ -169,6 +172,7 @@
             // 
             // cbbIDCapacity
             // 
+            this.cbbIDCapacity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDCapacity.FormattingEnabled = true;
             this.cbbIDCapacity.Location = new System.Drawing.Point(161, 219);
@@ -188,6 +192,7 @@
             // 
             // cbbIDRom
             // 
+            this.cbbIDRom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDRom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDRom.FormattingEnabled = true;
             this.cbbIDRom.Location = new System.Drawing.Point(161, 361);
@@ -207,6 +212,7 @@
             // 
             // cbbIDRam
             // 
+            this.cbbIDRam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDRam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDRam.FormattingEnabled = true;
             this.cbbIDRam.Location = new System.Drawing.Point(161, 314);
@@ -226,6 +232,7 @@
             // 
             // cbbIDSpeaker
             // 
+            this.cbbIDSpeaker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDSpeaker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDSpeaker.FormattingEnabled = true;
             this.cbbIDSpeaker.Location = new System.Drawing.Point(560, 267);
@@ -245,6 +252,7 @@
             // 
             // cbbIDSpeed
             // 
+            this.cbbIDSpeed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDSpeed.FormattingEnabled = true;
             this.cbbIDSpeed.Location = new System.Drawing.Point(560, 220);
@@ -264,6 +272,7 @@
             // 
             // cbbIDMouse
             // 
+            this.cbbIDMouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDMouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDMouse.FormattingEnabled = true;
             this.cbbIDMouse.Location = new System.Drawing.Point(560, 172);
@@ -283,6 +292,7 @@
             // 
             // cbbIDKeybroad
             // 
+            this.cbbIDKeybroad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDKeybroad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDKeybroad.FormattingEnabled = true;
             this.cbbIDKeybroad.Location = new System.Drawing.Point(560, 125);
@@ -302,6 +312,7 @@
             // 
             // cbbIDSizeScreen
             // 
+            this.cbbIDSizeScreen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDSizeScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDSizeScreen.FormattingEnabled = true;
             this.cbbIDSizeScreen.Location = new System.Drawing.Point(560, 77);
@@ -321,6 +332,7 @@
             // 
             // cbbIDScreen
             // 
+            this.cbbIDScreen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbIDScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbIDScreen.FormattingEnabled = true;
             this.cbbIDScreen.Location = new System.Drawing.Point(560, 30);

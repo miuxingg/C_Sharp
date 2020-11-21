@@ -2,10 +2,13 @@ C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\bin\Debug\Main
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\bin\Debug\MainActivity.exe
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\bin\Debug\MainActivity.pdb
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.csprojAssemblyReference.cache
-C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.Form1.resources
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.Properties.Resources.resources
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.exe
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.pdb
 C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.Add_Computer.resources
+C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.Payment.resources
+C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.Login.resources
+C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.Main.resources
+C:\Users\Admin\Desktop\BTL_LTTQ_N03_K59\MainActivity\MainActivity\obj\Debug\MainActivity.csproj.ResolveComReference.cache

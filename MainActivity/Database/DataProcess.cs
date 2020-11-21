@@ -29,7 +29,7 @@ namespace MainActivity
             }
         }
 
-
+        public SqlConnection Conn { get => conn; set => conn = value; }
 
         public void Connection()
         {
@@ -37,35 +37,24 @@ namespace MainActivity
             if (conn.State != ConnectionState.Open)
                 conn.Open();
         }
-
+        
         public void CloseConnect()
         {
             if (conn.State != ConnectionState.Closed)
                 conn.Close();
             conn.Dispose();
         }
-        public void selectTable(string query, DataGridView gridV)
+        public DataTable selectTable(string query)
         {
             DataTable tb = new DataTable();
             Connection();
             SqlDataAdapter adapter = new SqlDataAdapter(query, strConnect);
             adapter.Fill(tb);
-            gridV.DataSource = tb;
-            gridV.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            gridV.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            gridV.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            gridV.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            gridV.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            return tb;
         }
 
         public int Querry(string querry, object[] paramter = null)
         {
-            //Connection();
-            //SqlCommand command = new SqlCommand();
-            //command.Connection = conn;
-            //command.CommandText = querry;
-            //command.ExecuteNonQuery();
-            //CloseConnect();
             int data = 0;
             Connection();
             SqlCommand command = new SqlCommand(querry, conn);
@@ -97,6 +86,6 @@ namespace MainActivity
             }
             return data;
         }
-
     }
+
 }
